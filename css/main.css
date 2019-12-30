@@ -1,0 +1,224 @@
+/* @header-grey: #d8d8d8;
+@header-grey-dark: #7f7e7e;
+
+@main-blue: #1c35c6;
+
+@bg-light-blue: #d5daf4;
+
+@main-tangerine: #ed7c00; */
+body {
+  font-size: 62.5%;
+}
+.brand-logo {
+  width: 30%;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  max-width: 80%;
+}
+section {
+  margin: 20px auto;
+  width: 80%;
+  padding-top: 70px;
+}
+
+.box-right {
+  background-color: #1c35c6;
+  color: white;
+  height: 400px;
+}
+.main-title {
+  margin-top: 100px;
+  margin-left: 2rem;
+}
+.sub-title {
+  margin-left: 2rem;
+}
+.story-con_subheading {
+  margin-bottom: 30px;
+}
+#story {
+  height: 100vh;
+  padding-top: 0px;
+  position: relative;
+}
+h6,
+.whatweare {
+  font-size: 1.3rem;
+}
+.video-container {
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.myStory {
+  width: 50vw;
+  height: 40vw;
+
+  padding: 30px;
+  padding-top: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.myStory-1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -10%);
+  z-index: 100;
+  background-color: white;
+}
+.myStory-2 {
+  background-color: #1c35c6;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 50;
+}
+
+.myStory-3 {
+  background-color: #ed7c00;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -40%);
+  z-index: 0;
+}
+
+@media (max-width: 830px) {
+  .myStory h3,
+  .myStory h5,
+  .myStory h6 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .myStory h3,
+  .myStory h5,
+  .myStory h6 {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 830px) {
+  .myStory-1 {
+    position: relative;
+    margin-top: 50px;
+    transform: translateX(-280px);
+  }
+  .myStory-2 {
+    position: relative;
+    transform: translate(-280px, 50px);
+  }
+
+  .myStory-3 {
+    position: relative;
+    transform: translate(-280px, 80px);
+  }
+  .right-button {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .myStory-1 {
+    position: relative;
+    margin-top: 50px;
+    transform: translateX(-200px);
+  }
+  .myStory-2 {
+    position: relative;
+    transform: translate(-200px, 50px);
+  }
+
+  .myStory-3 {
+    position: relative;
+    transform: translate(-200px, 80px);
+  }
+  .right-button {
+    opacity: 0;
+  }
+  #story {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  .myStory {
+    padding: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .our-work h3,
+  .our-work h4,
+  .our-work h5,
+  .main-title,
+  .sub-title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 550px) {
+  .whatweare {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 450px) {
+  .myStory h3,
+  .myStory h5,
+  .myStory h6,
+  .whatweare {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .myStory1 {
+    position: relative;
+    top: -100;
+  }
+
+  .myStory2 {
+  }
+  .myStory3 {
+  }
+}
+
+.left-button,
+.right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  padding-top: 6px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 200;
+}
+.left-button:hover,
+.right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.left-button {
+  top: 50%;
+  left: -5px;
+  transform: translate(0, -50%);
+}
+.right-button {
+  top: 50%;
+  right: -5px;
+  transform: translate(0, -50%);
+}
