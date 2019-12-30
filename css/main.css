@@ -20,6 +20,11 @@ img {
 .logo {
   max-width: 80%;
 }
+@media (max-width: 500px) {
+  .logo {
+    max-width: 100%;
+  }
+}
 section {
   margin: 20px auto;
   width: 80%;
@@ -131,16 +136,16 @@ h6,
   .myStory-1 {
     position: relative;
     margin-top: 50px;
-    transform: translateX(-200px);
+    transform: translateX(-170px);
   }
   .myStory-2 {
     position: relative;
-    transform: translate(-200px, 50px);
+    transform: translate(-170px, 50px);
   }
 
   .myStory-3 {
     position: relative;
-    transform: translate(-200px, 80px);
+    transform: translate(-170px, 80px);
   }
   .right-button {
     opacity: 0;
