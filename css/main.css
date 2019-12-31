@@ -156,6 +156,9 @@ h6,
   .myStory {
     height: 80vw;
   }
+  .slider {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 450px) {
   .myStory h3,
