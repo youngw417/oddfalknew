@@ -1,14 +1,47 @@
 /* @header-grey: #d8d8d8;
 @header-grey-dark: #7f7e7e;
+.h1-heading {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-@main-blue: #1c35c6;
+html,
+body {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 
-@bg-light-blue: #d5daf4;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 
-@main-tangerine: #ed7c00; */
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #555;
+}
+
 body {
   font-size: 62.5%;
 }
+
+.myNav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 90px;
+}
+
+#home {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 70%;
+}
+
 .brand-logo {
   width: 30%;
   overflow: hidden;
@@ -49,7 +82,6 @@ section {
 #story {
   height: 100vh;
   padding-top: 0px;
-  position: relative;
 }
 h6,
 .whatweare {
@@ -62,40 +94,32 @@ h6,
   overflow: hidden;
 }
 
+#story {
+  height: 130vh;
+  padding-top: 40px;
+}
 .myStory {
   width: 50vw;
-  height: 40vw;
+  height: 50vw;
 
   padding: 30px;
-  padding-top: 20px;
+  padding-left: 10px;
+
   margin: 0 auto;
   border: 1px solid black;
-  position: absolute;
 }
 
 .myStory-1 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-70%, -10%);
-  z-index: 100;
   background-color: white;
 }
 .myStory-2 {
   background-color: #1c35c6;
   color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  z-index: 50;
 }
 
 .myStory-3 {
   background-color: #ed7c00;
   color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-30%, -40%);
-  z-index: 0;
 }
 
 @media (max-width: 830px) {
@@ -111,55 +135,11 @@ h6,
   .myStory h6 {
     font-size: 0.8rem;
   }
-}
-@media (max-width: 830px) {
-  .myStory-1 {
-    position: relative;
-    margin-top: 50px;
-    transform: translateX(-280px);
-  }
-  .myStory-2 {
-    position: relative;
-    transform: translate(-280px, 50px);
-  }
-
-  .myStory-3 {
-    position: relative;
-    transform: translate(-280px, 80px);
-  }
-  .right-button {
-    opacity: 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .myStory-1 {
-    position: relative;
-    margin-top: 50px;
-    transform: translateX(-170px);
-  }
-  .myStory-2 {
-    position: relative;
-    transform: translate(-170px, 50px);
-  }
-
-  .myStory-3 {
-    position: relative;
-    transform: translate(-170px, 80px);
-  }
-  .right-button {
-    opacity: 0;
-  }
-  #story {
-    padding-top: 60px;
-  }
-}
-
-@media (max-width: 650px) {
   .myStory {
-    padding: 10px;
+    height: 70vw;
   }
 }
+
 @media (max-width: 550px) {
   .our-work h3,
   .our-work h4,
@@ -173,57 +153,15 @@ h6,
   .whatweare {
     font-size: 1.1rem;
   }
+  .myStory {
+    height: 80vw;
+  }
 }
 @media (max-width: 450px) {
   .myStory h3,
   .myStory h5,
   .myStory h6,
   .whatweare {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
-}
-@media (max-width: 700px) {
-  .myStory1 {
-    position: relative;
-    top: -100;
-  }
-
-  .myStory2 {
-  }
-  .myStory3 {
-  }
-}
-
-.left-button,
-.right-button {
-  display: flex;
-  justify-content: center;
-  align-items: none;
-  flex-direction: row;
-  color: #fff;
-  background-color: #333;
-  font-size: 40px;
-  border-radius: 50%;
-  position: absolute;
-  padding-top: 6px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  z-index: 200;
-}
-.left-button:hover,
-.right-button:hover {
-  color: #333;
-  background-color: #fff;
-  border: 2px solid #333;
-}
-.left-button {
-  top: 50%;
-  left: -5px;
-  transform: translate(0, -50%);
-}
-.right-button {
-  top: 50%;
-  right: -5px;
-  transform: translate(0, -50%);
 }
