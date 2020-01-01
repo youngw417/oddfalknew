@@ -217,6 +217,7 @@ footer span {
   }
 }
 @media (max-width: 450px) {
+  .myStory h4,
   .myStory h3,
   .myStory h5,
   .myStory h6,
