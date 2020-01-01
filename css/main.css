@@ -60,7 +60,7 @@ body {
 #home {
   margin-top: 30px;
   margin-bottom: 130px;
-  width: 70%;
+  width: 80%;
 }
 
 .brand-logo {
@@ -96,9 +96,16 @@ section {
 }
 .sub-title {
   margin-left: 2rem;
+  font-weight: 200;
 }
 #work {
   padding-top: 100px;
+}
+.our-work {
+  margin-bottom: 30px;
+}
+.our-work h4 {
+  font-weight: 700;
 }
 .story-con_subheading {
   margin-bottom: 30px;
@@ -109,7 +116,7 @@ section {
 }
 h6,
 .whatweare {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 .video-container {
   max-width: 70%;
@@ -119,7 +126,7 @@ h6,
 }
 
 #story {
-  height: 130vh;
+  height: 100vh;
   padding-top: 40px;
 }
 .myStory {
@@ -145,7 +152,29 @@ h6,
   background-color: #ed7c00;
   color: white;
 }
-
+.story-con__heading h4 {
+  font-weight: 200;
+}
+.footer-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+footer .container {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .section {
+  padding: 10px;
+}
+footer span {
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-left: 50px;
+}
 @media (max-width: 830px) {
   .myStory h3,
   .myStory h5,
@@ -182,6 +211,9 @@ h6,
   }
   .slider {
     margin-bottom: 20px;
+  }
+  footer {
+    display: none;
   }
 }
 @media (max-width: 450px) {
