@@ -196,7 +196,7 @@ footer span {
 @media (max-width: 550px) {
   .our-work h3,
   .our-work h4,
-  .our-work h5,
+  .our-work h6,
   .main-title,
   .sub-title {
     font-size: 1.4rem;
